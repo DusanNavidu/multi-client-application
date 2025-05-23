@@ -53,7 +53,7 @@ public class ServerController {
             try {
                 this.username = input.readUTF();
                 System.out.println(username + " has joined the chat...");
-                broadcastText("🔵 " + username + " has joined the chat...", this);
+                broadcastText(username + " has joined the chat...", this);
 
                 while (true) {
                     String type = input.readUTF();
